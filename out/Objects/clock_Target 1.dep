@@ -1,0 +1,364 @@
+Dependencies for Project 'clock', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x5938EC20)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11XX.H)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (.\Hardware\OLED_NEW\OLED_NEW.h)(0x5753B4CC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+I (.\Hardware\GPIO\gpio.h)(0x575FCC31)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (.\Hardware\OLED_NEW\font.h)(0x574E9BE8)
+I (.\ZLG_GUI\config.h)(0x574E9A98)
+I (.\ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (.\ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (.\ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (.\ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (.\ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (.\ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (.\ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (.\ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (.\ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (.\ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (.\ZLG_GUI\MENU.H)(0x591809B5)
+I (.\ZLG_GUI\spline.H)(0x5370A362)
+I (.\ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\PWM\pwm.h)(0x592FD39A)
+I (.\Hardware\ADC\adc.h)(0x592FD888)
+I (.\Hardware\CFG\uart.h)(0x592E0B7C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+F (.\ZLG_GUI\ConvertColor.c)(0x58FECE0A)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\convertcolor.o --omf_browse .\objects\convertcolor.crf --depend .\objects\convertcolor.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\font5_7.c)(0x592FE630)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\font5_7.o --omf_browse .\objects\font5_7.crf --depend .\objects\font5_7.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\FONT8_8.C)(0x422C06AE)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\font8_8.o --omf_browse .\objects\font8_8.crf --depend .\objects\font8_8.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\FONT24_32.C)(0x57502218)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\font24_32.o --omf_browse .\objects\font24_32.crf --depend .\objects\font24_32.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\GUI_BASIC.C)(0x575E75E0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\gui_basic.o --omf_browse .\objects\gui_basic.crf --depend .\objects\gui_basic.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x56FE42D6)
+F (.\ZLG_GUI\GUI_StockC.C)(0x513C9E9A)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\gui_stockc.o --omf_browse .\objects\gui_stockc.crf --depend .\objects\gui_stockc.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\lcmdrv.c)(0x574EA4B2)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\lcmdrv.o --omf_browse .\objects\lcmdrv.crf --depend .\objects\lcmdrv.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (.\Hardware\OLED_NEW\oled_new.h)(0x5753B4CC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+I (.\Hardware\GPIO\gpio.h)(0x575FCC31)
+F (.\ZLG_GUI\loadbit.c)(0x592E9BF2)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\loadbit.o --omf_browse .\objects\loadbit.crf --depend .\objects\loadbit.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\menu.c)(0x57528476)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\menu.o --omf_browse .\objects\menu.crf --depend .\objects\menu.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\ZLG_GUI\spline.c)(0x5907232C)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\spline.o --omf_browse .\objects\spline.crf --depend .\objects\spline.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x56FE42D6)
+F (.\ZLG_GUI\windows.c)(0x57528476)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\windows.o --omf_browse .\objects\windows.crf --depend .\objects\windows.d)
+I (ZLG_GUI\config.h)(0x574E9A98)
+I (ZLG_GUI\LCMDRV.H)(0x5370A29D)
+I (ZLG_GUI\FONT_MACRO.H)(0x513C9D84)
+I (ZLG_GUI\GUI_CONFIG.H)(0x5753F0FC)
+I (ZLG_GUI\GUI_BASIC.H)(0x513C9D84)
+I (ZLG_GUI\GUI_STOCKC.H)(0x40513ED4)
+I (ZLG_GUI\FONT5_7.H)(0x513C9D84)
+I (ZLG_GUI\FONT8_8.H)(0x513C9D84)
+I (ZLG_GUI\FONT24_32.H)(0x513C9D84)
+I (ZLG_GUI\LOADBIT.H)(0x404FF990)
+I (ZLG_GUI\WINDOWS.H)(0x513C9D84)
+I (ZLG_GUI\MENU.H)(0x591809B5)
+I (ZLG_GUI\spline.H)(0x5370A362)
+I (ZLG_GUI\ConvertColor.H)(0x4050262E)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\Hardware\ADC\ADC.c)(0x5938E3EF)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (Hardware\ADC\adc.h)(0x592FD888)
+I (.\Hardware\KEY\Key.h)(0x58FEC8EA)
+I (.\Hardware\GPIO\GPIO.h)(0x575FCC31)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+I (.\Hardware\CFG\uart.h)(0x592E0B7C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+F (.\Hardware\AT24C02\at24c02.c)(0x5938EBF0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\at24c02.o --omf_browse .\objects\at24c02.crf --depend .\objects\at24c02.d)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (Hardware\AT24C02\at24c02.h)(0x5937E25A)
+I (.\Hardware\CFG\i2c.h)(0x5205B0E2)
+F (.\Hardware\CFG\i2c.c)(0x5938EBF0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (Hardware\CFG\i2c.h)(0x5205B0E2)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\Hardware\CFG\uart.c)(0x5938E3EF)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (Hardware\CFG\uart.h)(0x592E0B7C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+F (.\Hardware\KEY\Key.c)(0x5938EBF0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (Hardware\KEY\Key.h)(0x58FEC8EA)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (.\Hardware\GPIO\GPIO.h)(0x575FCC31)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+F (.\Hardware\OLED_NEW\Oled_New.c)(0x592E3080)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\oled_new.o --omf_browse .\objects\oled_new.crf --depend .\objects\oled_new.d)
+I (Hardware\OLED_NEW\oled_new.h)(0x5753B4CC)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11XX.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+I (.\Hardware\GPIO\gpio.h)(0x575FCC31)
+I (.\Hardware\TIME\timer.h)(0x575FCC32)
+F (.\Hardware\PWM\pwm.c)(0x5938EBF0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (Hardware\PWM\pwm.h)(0x592FD39A)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (.\Hardware\TIME\timer.c)(0x5938EA5F)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (Hardware\TIME\timer.h)(0x575FCC32)
+F (RTE\Device\LPC1114FBD48_301\startup_LPC11xx.s)(0x4CF35218)(--cpu Cortex-M0 -g --apcs=interwork -I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx--pd "__UVISION_VERSION SETA 520" --pd "_RTE_ SETA 1"--list .\listings\startup_lpc11xx.lst --xref -o .\objects\startup_lpc11xx.o --depend .\objects\startup_lpc11xx.d)
+F (RTE\Device\LPC1114FBD48_301\system_LPC11xx.c)(0x4CF35218)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Hardware\ADC -I .\Hardware\AT24C02 -I .\Hardware\CFG -I .\Hardware\GPIO -I .\Hardware\KEY -I .\Hardware\MUSIC -I .\Hardware\NRF24L01 -I .\Hardware\OLED -I .\Hardware\OLED_NEW -I .\Hardware\PWM -I .\Hardware\TIME -I .\Hardware -I .\ZLG_GUI -I .\Hardware\USART-I C:\Users\lll88\Desktop\dpj\finalproject\out\RTE-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="520" -D_RTE_-o .\objects\system_lpc11xx.o --omf_browse .\objects\system_lpc11xx.crf --depend .\objects\system_lpc11xx.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\core_cm0.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_compiler.h)(0x57D7BCDA)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include\cmsis_armcc.h)(0x57EB0E6C)
+I (D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
