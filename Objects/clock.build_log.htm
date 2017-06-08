@@ -21,68 +21,45 @@ Target DLL:      Segger\JL2CM3.dll V2.99.20.0
 Dialog DLL:      TARMCM1.DLL V1.10.0.0
  
 <h2>Project:</h2>
-C:\Users\lll88\Desktop\dpj\test 8\clock.uvprojx
-Project File Date:  06/01/2017
+C:\Users\lll88\Desktop\dpj\test 5\clock.uvprojx
+Project File Date:  06/08/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 2 (build 183)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
-Rebuild target 'Target 1'
-compiling ConvertColor.c...
-compiling font5_7.c...
+Build target 'Target 1'
 compiling main.c...
-main.c(38): warning:  #940-D: missing return statement at end of non-void function "GUI_MenuDraw"
+main.c(37): warning:  #940-D: missing return statement at end of non-void function "GUI_MenuDraw"
   }
-main.c(451): warning:  #223-D: function "Set_pwm" declared implicitly
-  				Set_pwm(5000, 400);
-main.c(457): warning:  #223-D: function "Set_pwm" declared implicitly
-  			else Set_pwm(0, 400);
-main.c(462): warning:  #111-D: statement is unreachable
+main.c(423): warning:  #223-D: function "AT24C02_ReadOneByte" declared implicitly
+    int T=AT24C02_ReadOneByte(SETMAX_TEMP);     //??AT24C02?ж?ȡSETMAX_TEMP
+main.c(469): warning:  #223-D: function "Set_pwm" declared implicitly
+  				Set_pwm(1000, 50);
+main.c(477): warning:  #223-D: function "Set_pwm" declared implicitly
+  				Set_pwm(1000,100);
+main.c(483): warning:  #111-D: statement is unreachable
    return 0; 
-main.c(522): warning:  #111-D: statement is unreachable
+main.c(547): warning:  #223-D: function "AT24C02_ReadOneByte" declared implicitly
+  	     int T=AT24C02_ReadOneByte(SETMAX_TEMP);  
+main.c(558): warning:  #223-D: function "AT24C02_WriteOneByte" declared implicitly
+  				AT24C02_WriteOneByte(SETMAX_TEMP, T);       
+main.c(668): warning:  #111-D: statement is unreachable
   				 case 0:for(int i=20;i<120;i+=5)GUI_PutString(i,17,"-"); return 1;break;
-main.c(523): warning:  #111-D: statement is unreachable
+main.c(669): warning:  #111-D: statement is unreachable
   			   case 1:for(int i=20;i<120;i+=5)GUI_PutString(i,28,"-"); return 2;break;
-main.c(543): warning:  #223-D: function "TIM32B0_PWM" declared implicitly
-  	  TIM32B0_PWM(0,0);
-main.c: 7 warnings, 0 errors
-compiling FONT8_8.C...
-compiling FONT24_32.C...
-compiling GUI_StockC.C...
-compiling lcmdrv.c...
-compiling GUI_BASIC.C...
-ZLG_GUI\GUI_BASIC.C(1202): warning:  #111-D: statement is unreachable
-    GUI_HLine(x0_bak, y0_bak, x1_bak, color);
-ZLG_GUI\GUI_BASIC.C: 1 warning, 0 errors
-compiling loadbit.c...
-compiling menu.c...
-compiling windows.c...
-compiling spline.c...
-compiling ADC.c...
-Hardware\ADC\ADC.c(157): warning:  #940-D: missing return statement at end of non-void function "GetTemp"
-  }
-Hardware\ADC\ADC.c(67): warning:  #177-D: variable "T" was declared but never referenced
-  	float  T=0;
-Hardware\ADC\ADC.c(161): warning:  #1-D: last line of file ends without a newline
-  	 
-Hardware\ADC\ADC.c: 3 warnings, 0 errors
-compiling at24c02.c...
-compiling i2c.c...
-compiling uart.c...
-compiling Key.c...
-compiling GPIO.c...
-compiling music.c...
-Hardware\MUSIC\music.c(35): warning:  #223-D: function "T16B0_delay_ms" declared implicitly
-  		
-elay_ms (1000*(mysunshine [2*i]));							//??һ???ֽڽ??ģ?ÿ??30ms
-Hardware\MUSIC\music.c: 1 warning, 0 errors
-compiling pwm.c...
-compiling Oled_New.c...
-assembling startup_LPC11xx.s...
-compiling timer.c...
-compiling system_LPC11xx.c...
+main.c(670): warning:  #111-D: statement is unreachable
+  			   case 2:for(int i=20;i<120;i+=5)GUI_PutString(i,39,"-"); return 3;break;
+main.c(692): warning:  #223-D: function "Key_init" declared implicitly
+      Key_init();
+main.c(697): warning:  #223-D: function "TIM32B0_PWM" declared implicitly
+  	  TIM32B0_PWM(1000,100);
+main.c(700): warning:  #223-D: function "I2C_Init" declared implicitly
+  	  I2C_Init();
+main.c(701): warning:  #223-D: function "AT24C02_Check" declared implicitly
+  		while(AT24C02_Check()) ; 
+main.c: 14 warnings, 0 errors
 linking...
-Program Size: Code=7460 RO-data=1000 RW-data=1244 ZI-data=1732  
-".\Objects\clock.axf" - 0 Error(s), 12 Warning(s).
+Program Size: Code=8368 RO-data=1000 RW-data=1444 ZI-data=1732  
+".\Objects\clock.axf" - 0 Error(s), 14 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -99,7 +76,7 @@ Package Vendor: Keil
    * Component: Startup Version: 1.0.0
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\lll88\Desktop\dpj\test 8\RTE
+  C:\Users\lll88\Desktop\dpj\test 5\RTE
   D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include
   D:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx
 
@@ -108,9 +85,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.0.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_LPC11xx.c
       Source file:   Device\Source\ARM\startup_LPC11xx.s
-Build Time Elapsed:  00:00:05
+      Source file:   Device\Source\system_LPC11xx.c
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

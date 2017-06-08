@@ -78,19 +78,6 @@ void Gpio_Init(int i,int m,int DIR)//标准io初始化
 }
  #if 0
  
-	/*	
-	LPC_SYSCON->SYSAHBCLKCTRL|=(1<<16);//打开iocon配置时钟
-	LPC_IOCON->PIO2_0&=~0X07;
-	LPC_IOCON->PIO2_0|=0X00;//配置io为gpio模式
-	LPC_SYSCON->SYSAHBCLKCTRL&=~(1<<16);//关闭配置时钟
-	*/
-	//LPC_SYSCON->SYSAHBCLKCTRL|=(1<<16);//使能gpio时钟
-	//LPC_GPIO2->DIR |=(1<<0);//配置为输出模式
-	//LPC_GPIO2->DATA|=(1<<0);	//配置为高电平
-	//LPC_GPIO2->DIR |=0xff;//配置为输出模式
-	//LPC_GPIO2->DATA|=0x00;	//配置为高电平
-
-
  #endif 
 
 

@@ -469,19 +469,9 @@
               <FilePath>.\Hardware\CFG\uart.c</FilePath>
             </File>
             <File>
-              <FileName>GPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\GPIO\GPIO.c</FilePath>
-            </File>
-            <File>
               <FileName>Key.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Hardware\KEY\Key.c</FilePath>
-            </File>
-            <File>
-              <FileName>music.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\MUSIC\music.c</FilePath>
             </File>
             <File>
               <FileName>Oled_New.c</FileName>

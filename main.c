@@ -2,15 +2,14 @@
 #include "OLED_NEW.h"
 #include "font.h"
 #include "config.h"
-#include "music.h"
 #include "timer.h"
 #include "pwm.h"
 #include "adc.h"
 #include "uart.h"
 #include "stdio.h"
+#define  SETMAX_TEMP 0x01       //宏定义设置上限温度值的地址
 
-
-#define key1_dowm1() (LPC_GPIO3->DATA>>0&0x01)
+#define key1_dowm1() (LPC_GPIO3->DATA>>0&0x01)           //宏定义使用5个按键
 #define key2_dowm2() (LPC_GPIO3->DATA>>1&0x01)
 #define key3_dowm3() (LPC_GPIO3->DATA>>2&0x01)
 #define key4_dowm4() (LPC_GPIO3->DATA>>3&0x01)
@@ -26,7 +25,7 @@
  int MyThermometer(void);
  
  
-uint8  GUI_MenuDraw()      //菜单
+uint8  GUI_MenuDraw()      //画菜单
 {
 	    
 	    GUI_HLine(0, 0, 128, 1);
@@ -36,17 +35,14 @@ uint8  GUI_MenuDraw()      //菜单
 			GUI_HLine(0, 63, 128, 1);
 
 }
-uint8 Juhao[]=
+uint8 Juhao[]=                           //画句号（℃前面的点）
 {
 0x60,0x60,0x00,0x00,0x00,
 };
 
 
-
-
-
  
-uint8 Thermometer[]=
+uint8 Thermometer[]=                            //画第一个菜单中的温度计
 {
 
 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
@@ -139,7 +135,7 @@ uint8 Thermometer[]=
 
 
 
-uint8 Shizhong[]=
+uint8 Shizhong[]=                           //画第二个菜单中的时钟
 {
 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
@@ -191,9 +187,44 @@ uint8 Shizhong[]=
 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 0x00};
 
+ 
+uint8 My_setting[]=                        //画第三个菜单中的设置图片
+{
+
+0x00,0x00,0x3E,0x00,0x00,0x00,0x00,0x7E,
+0x00,0x00,0x00,0x3C,0x7E,0x3E,0x00,0x00,
+0x7E,0x7E,0x3E,0x00,0x00,0xFE,0xFF,0x3F,
+0x00,0x00,0xFF,0xFF,0xFF,0x00,0x00,0xFF,
+0xFF,0xFF,0x00,0x00,0x3F,0xFF,0xFE,0x00,
+0x0E,0x7F,0xFF,0xFE,0x30,0x1E,0xFF,0xFF,
+0xFF,0x78,0x3F,0xFF,0xE7,0xFF,0xFC,0x3F,
+0xFE,0x00,0x3F,0xFE,0x3F,0xFC,0x00,0x3F,
+0xFE,0x3F,0xF8,0x00,0x1F,0xFC,0x1F,0xF0,
+0x00,0x0F,0xF8,0x07,0xE0,0x00,0x07,0xE0,
+0x0F,0xE0,0x3E,0x03,0xF0,0x7F,0xE0,0x7E,
+0x03,0xFE,0xFF,0xE0,0xFF,0x03,0xFF,0xFF,
+0xC0,0xFF,0x03,0xFF,0xFF,0xC0,0xFF,0x03,
+0xFF,0xFF,0xE0,0xFF,0x03,0xFF,0xFF,0xE0,
+0xFF,0x03,0xFF,0x0F,0xE0,0x3E,0x03,0xF0,
+0x07,0xE0,0x00,0x07,0xE0,0x07,0xE0,0x00,
+0x07,0xE0,0x3F,0xF8,0x00,0x1F,0xFC,0x3F,
+0xFC,0x00,0x3F,0xFE,0x3F,0xFE,0x00,0x3F,
+0xFE,0x3F,0xFF,0x00,0xFF,0xFC,0x3F,0xFF,
+0xFF,0xFF,0xFC,0x0E,0x7F,0xFF,0xFE,0x30,
+0x00,0x3F,0xFF,0xFE,0x00,0x00,0x7F,0xFF,
+0xFE,0x00,0x00,0xFF,0xFF,0xFF,0x00,0x00,
+0xFE,0xFF,0x3F,0x00,0x00,0x7E,0x7E,0x3E,
+0x00,0x00,0x3C,0x7E,0x3E,0x00,0x00,0x18,
+0x7E,0x18,0x00,0x00,0x00,0x3E,0x00,0x00,
+};
 
 
-uint8 hours[12][2]={
+
+
+
+
+
+uint8 hours[12][2]={                       //画第二个菜单中时钟的时针旋转位置
 
 {64,27},               //指向0
 {71,29},               //指向1
@@ -211,8 +242,8 @@ uint8 hours[12][2]={
 
 };
 
-
-uint8 minute[60][2]={
+ 
+uint8 minute[60][2]={                      //画第二个菜单中时钟的分针旋转位置     
 
 {64,23},               //指向0
 {65,23},               //指向1
@@ -286,12 +317,12 @@ uint8 minute[60][2]={
 延时函数
 ********************/
 
-void Delay(int f)
-{
-	int i,j;
-	for(i=0;i<3000;i++)
-	for(j=0;j<f;j++);
-}
+//void Delay(int f)
+//{
+//	int i,j;
+//	for(i=0;i<3000;i++)
+//	for(j=0;j<f;j++);
+//}
 /*******************
 32位定时计数器0中断服务函数
 ********************/
@@ -300,7 +331,7 @@ void TIMER32_0_IRQHandler(void)
 {
 	
 	
-   if(++timecounter>=200)    //1s定时时间到
+   //if(++timecounter>=200)    //1s定时时间到
 	 {
 		  timecounter=0;            //秒计数器清零，开始下一秒计数
 		 
@@ -312,7 +343,7 @@ void TIMER32_0_IRQHandler(void)
 //		 
 //		  if(minuteTime==59)hourTime++;
 //			hourTime%=12;
-//			minuteTime++;
+			minuteTime++;
 //			minuteTime%=60;
 //		 
 //		 	GUI_RectangleFill(0, 0, 128, 64, back_color);  //显示时钟中的内容
@@ -330,7 +361,6 @@ void TIMER32_0_IRQHandler(void)
 		  /*************************************************/  
 	 }
 	 
-	  
     LPC_TMR32B0->IR=0x01;    //向匹配通道0写1清除中断
  }
 /***********************
@@ -351,7 +381,11 @@ void TIMER32_0_IRQHandler(void)
  }
  
  /***********************
- 菜单部分
+作者：唐海月
+ 
+功能：画窗口
+ 
+版本：1.0
  ***********************/
 
 WINDOWS Win;	
@@ -368,49 +402,28 @@ void WinInit(void)
 		Win.state=AS;
 	
 	
-	
 }
-int MyClock(void)
- {
-		 while(1)
-		 {
-					if( key5_dowm5()==0)
-					{
-						GUI_ClearSCR(); 
-						return 0;
-					}
-					GUI_LineWith(64,41,hours[hourTime][0],hours[hourTime][1],2,0);  
-					GUI_LineWith(64,41,minute[minuteTime][0],minute[minuteTime][1],1,0);
-					if(minuteTime==59)hourTime++;
-					hourTime%=12;
-					minuteTime++;
-					minuteTime%=60;
-					GUI_RectangleFill(0, 0, 128, 64, back_color);  //显示时钟中的内容
-					GUI_LoadPic(36,13,Shizhong,55,55);
-					GUI_PutString(5,2,"2017.05.03 Wednesday");
-					GUI_MenuDraw();
-					GUI_LineWith(64,41,hours[hourTime][0],hours[hourTime][1],2,1);
-					GUI_LineWith(64,41,minute[minuteTime][0],minute[minuteTime][1],1,1);
-			
-      
-		  GUI_Exec();//更新一次屏幕缓冲			
-	    }  
- }
- 
- 
- 
- 
-char Str[20];
- int MyThermometer(void)
+
+/************************
+作者：唐海月
+
+功能：我的温度，第一个菜单
+
+版本：1.0
+*************************/
+
+
+ char Str[20];
+ int MyThermometer(void)   
  {
   int Awhere=0;
-	int flag=0;
+	int flag=0;         //标志位
 	 
   GUI_ClearSCR();
-	
+  int T=AT24C02_ReadOneByte(SETMAX_TEMP);     //从AT24C02中读取SETMAX_TEMP
 	while(1)
 		{
-		
+		      
 			GUI_LoadPic(15,6, Thermometer,94,56);
 			GUI_MenuDraw();
 			GUI_PutString(12,2,"ranran and yueyue");
@@ -418,7 +431,7 @@ char Str[20];
 			
 			if(key1_dowm1()==0)          //当按键1按下的时候，进入ADC_Init的状态
 				{
-//				delay_ms(20);
+ 				  T16B0_delay_ms(20);
 					if(key1_dowm1()==0)
 					{
 					while((key1_dowm1()==0));
@@ -446,29 +459,162 @@ char Str[20];
 			GUI_RectangleFill(45,32,(Temp>77?77:Temp)-20+45,34,1);
 		  
 			
-	    if(Temp>=77&&flag==0)         //判断温度是否大于77，如果大于77，频率5000，警报
+	
+			
+			// 判断上下限
+	    if(Temp>=T&&flag==0)         //判断温度是否大于T，如果大于T，频率1000，警报
 			{
-				Set_pwm(5000, 400);
+				
+				flag=1;
+				Set_pwm(1000, 50);
 			}
-			else if (Temp<77&&flag==1)
+			else if (Temp>36&&flag==1)
 			{
 				;
 			}						
-			else Set_pwm(0, 400);
-
+			else if(Temp<T)
+			{
+				Set_pwm(1000,100);
+			  flag=0;
+			}
 			
 		  GUI_Exec();//更新一次屏幕缓冲	
 	}	
  return 0; 
 }
  
-	
+
+
+/********************
+作者：唐海月
+
+功能：我的时钟，第二个菜单
+
+版本：1.0
+*********************/
+
+
+
+int MyClock(void)          //我的时钟，第二个菜单
+ {
+	   GUI_ClearSCR();
+		 while(1)
+		 {
+			 
+			   
+					if( key5_dowm5()==0)
+					{
+						GUI_ClearSCR(); 
+						return 0;
+					}
+					
+					
+					
+					GUI_LineWith(64,41,hours[hourTime][0],hours[hourTime][1],2,0);  
+					GUI_LineWith(64,41,minute[minuteTime][0],minute[minuteTime][1],1,0);
+					
+					
+					if(minuteTime==59)
+						hourTime++;
+					hourTime%=12;
+					minuteTime++;
+					T16B0_delay_ms(100);
+					minuteTime%=60;
+					GUI_RectangleFill(0, 0, 128, 64, back_color);  //显示时钟中的内容
+					GUI_LoadPic(36,13,Shizhong,55,55);
+					GUI_PutString(5,2,"2017.05.03 Wednesday");
+					GUI_MenuDraw();
+					GUI_LineWith(64,41,hours[hourTime][0],hours[hourTime][1],2,1);
+					GUI_LineWith(64,41,minute[minuteTime][0],minute[minuteTime][1],1,1);
+			
+      
+		  GUI_Exec();//更新一次屏幕缓冲			
+	    }  
+ }
+ 
+ 
+/********************
+作者：唐海月
+ 
+功能：我的设置，第三个个菜单
+ 
+版本：1.0
+*********************/
+ 
+ int MySetting(void)    //我的设置，第三个菜单
+ {
+	   
+	     int T=AT24C02_ReadOneByte(SETMAX_TEMP);  
+	     char Tarray[20];
+	     GUI_ClearSCR();
+	     GUI_MenuDraw();
+	     GUI_PutString(12,2,"ranran and yueyue");
+       while(1)
+			 {
+			 	if( key5_dowm5()==0)        //当按键5按下的时候，返回到菜单界面
+			 {
+			  GUI_ClearSCR();
+				 
+				AT24C02_WriteOneByte(SETMAX_TEMP, T);       
+				 
+			  return 0;
+		   } 
+			 
+
+			 
+			 
+			 if( key1_dowm1()==0)
+			 {
+	          T16B0_delay_ms(20);
+	          if( key1_dowm1()==0)        //当按键5按下的时候，返回到菜单界面
+	          {
+							while( (key1_dowm1()==0));
+							T++;	
+	          } 
+			}
+			 
+			 
+			 if( key2_dowm2()==0)        //当按键5按下的时候，返回到菜单界面
+			 { T16B0_delay_ms(20);
+	          if( key2_dowm2()==0)        //当按键5按下的时候，返回到菜单界面
+	          {
+							while( (key2_dowm2()==0));
+							T--;	
+	          } 
+		   } 
+			 
+			 
+			 
+			 if(T<1)T=1;         //设置 设置温度的上下限（1~100）
+			 else if(T>100)T=100;
+	     sprintf(Tarray,"Max:%3d",T);
+			 GUI_PutString(75,35,Tarray);
+			 
+			 
+			 
+			  GUI_LoadPic(25,17,My_setting,40,40);
+			  GUI_Exec();//更新一次屏幕缓冲	 
+			 }
+         
+       
+ }
+ 
+ 
+ 
+ 
+/****************************
+作者：唐海月
+ 
+功能：屏幕显示的主菜单
+ 
+版本：1.0
+*****************************/
 uint8 Menu(void)
 {
   int where=0;
 	GUI_PutString(32,17,"My Thermometer");
 	GUI_PutString(32,28,"My Clock");
-  GUI_PutString(32,39,"My Music");
+  GUI_PutString(32,39,"My Setting");
 	
   while(1)
  {
@@ -476,7 +622,7 @@ uint8 Menu(void)
 	 
 	 	GUI_PutString(32,17,"My Thermometer");
 		GUI_PutString(32,28,"My Clock");
-		GUI_PutString(32,39,"My Music");
+		GUI_PutString(32,39,"My Setting");
 		
 		if(key3_dowm3()==0)
 		{
@@ -521,7 +667,7 @@ switch(where)
 			 {
 				 case 0:for(int i=20;i<120;i+=5)GUI_PutString(i,17,"-"); return 1;break;
 			   case 1:for(int i=20;i<120;i+=5)GUI_PutString(i,28,"-"); return 2;break;
-			   case 2:for(int i=20;i<120;i+=5)GUI_PutString(i,39,"-");break;
+			   case 2:for(int i=20;i<120;i+=5)GUI_PutString(i,39,"-"); return 3;break;
 			 }
 		 }
    
@@ -529,9 +675,15 @@ switch(where)
 }
 }
  
- 
 
-;
+/****************************
+
+功能：主函数，所有功能的初始化
+
+
+****************************/
+
+
 
 int main(void)
 {
@@ -539,11 +691,16 @@ int main(void)
 		GUI_SetColor(1,0);//此时是正常显示，若(0,1)则反色显示	
     Key_init();
 		ADC_Init();
+	
     UART_Init();//串口初始化
-	  TIM32B0_PWM(0,0);
+	  T16B0_init();
+	  TIM32B0_PWM(1000,100);
 		int CASE=0;
-
-		 
+    
+	  I2C_Init();
+		while(AT24C02_Check()) ; 
+	
+	
 		WinInit();	
 		GUI_WindowsDraw(&Win);
 		while(1)
@@ -551,13 +708,14 @@ int main(void)
 			
 			switch(CASE)
 			{
-				case 0:CASE=Menu(); 	break;
+				case 0:CASE=Menu(); break;
 		    case 1:CASE=MyThermometer();break;
 			  case 2:CASE=MyClock();break;
+				case 3:CASE=MySetting();break;
 				default :CASE=0;
-				 
-				
+
 			}
+			
 		}
 			
 			

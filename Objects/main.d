@@ -24,9 +24,7 @@
 .\objects\main.o: .\ZLG_GUI\MENU.H
 .\objects\main.o: .\ZLG_GUI\spline.H
 .\objects\main.o: .\ZLG_GUI\ConvertColor.H
-.\objects\main.o: .\Hardware\MUSIC\music.h
 .\objects\main.o: .\Hardware\PWM\pwm.h
-.\objects\main.o: .\Hardware\KEY\Key.h
 .\objects\main.o: .\Hardware\ADC\adc.h
 .\objects\main.o: .\Hardware\CFG\uart.h
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
